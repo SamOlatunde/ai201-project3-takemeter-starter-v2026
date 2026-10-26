@@ -2,9 +2,32 @@
 #
 # Copy these from your README so the baseline is judged on exactly the
 # definitions you wrote. baseline.py reads this file.
-#
-# Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+sport: discusses athletic competition — games, players, teams, standings or results. Look for team and player names, scores, box-score lines, league structure. A post arguing for a policy about sport is politics, not sport.
+science: explains or discusses how something in the natural world works — space, physics, chemistry, medicine. Look for mechanisms, measurements, observations or experimental results. A post on a scientific topic that argues a funding or policy position is politics; a post about computing is hardware.
+hardware: discusses computing or information technology — machines, components, peripherals, software, or engineering practice. Look for product names, specifications, configuration problems or troubleshooting. Scope is computing generally, not only physical equipment.
+politics: argues for or against a policy, law, or official decision — what should be funded, cancelled, banned or negotiated. Look for advocacy, rights claims, or references to legislation, agencies and officials. The subject does not matter: arguing about space funding or encryption law is politics.
+
+# Decision rules 
+#
+# 1. ANYTHING vs politics — what the post ARGUES FOR decides, not its topic.
+#    Advocating a policy, law or official decision is politics whatever the
+#    subject; explaining how something works is not. Covers space funding
+#    (ng028, ng103), trade protection in a computing post (ng139), and gun
+#    posts arguing from medical evidence (ng011, ng055).
+#
+# 2. science vs hardware — hardware covers computing topics generally,
+#    including software and engineering practice. science is natural science.
+#
+# 3. sport vs science — statistical analysis OF a sport is sport. science
+#    means the natural world, not quantitative method applied to any domain
+#    (ng040, ng079 — sabermetrics).
+#
+# 4. Signature blocks are not content. Label on the body of the post only;
+#    ignore anything after a `--` separator, an email address or an
+#    employer address block.
+#
+# 5. Tie-break — when two labels are still defensible, pick the one the post
+#    spends most of its words on. Reach for this only after rules 1-3.
+#
+# sport vs hardware needs no rule: no post in the 200 straddles it.

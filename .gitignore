@@ -21,9 +21,12 @@ models/
 # `git add -A` in Colab commits a model checkpoint to your repo.
 takemeter_out/
 
+fetch_data.py 
 # OS noise
 .DS_Store
 Thumbs.db
+
+web_scrape.md
 
 # NOTE: results.json, results_three_seeds.json and baseline_results.json are
 # deliberately NOT ignored. They're evidence the run actually happened, and
