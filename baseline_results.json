@@ -1,0 +1,190 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.26666666666666666,
+    "f1_macro": 0.10526315789473685,
+    "per_label": {
+      "hardware": {
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.4210526315789474,
+        "support": 8
+      },
+      "politics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "science": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      },
+      "sport": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "As I heard the story, before Albert came up the the theory o'relativity and warped space, nobody could account for Mercury's orbit. It ran a little fast (I think) for simple Newtonian physics. With the success in finding Neptune to explain the odd movments of Uranus, it was postulated that there might be another inner planet to explain Mercury's orbit. It's unlikely anything bigger than an asteroid is closer to the sun than Mercury. I'm sure we would have spotted it by now. Perhaps some professionals can confirm that.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "The Proton has been used in 2, 3, and 4 stage versions. The two stage version was used for the first 3 launches, while the 3 and 4 stage versions are used today. The four stage version is used mostly for escape (and geosynchronous?) orbits, while the 3 stage version is used for low earth orbits. Since this is the version that launched Mir and the Salyuts (and the add-on modules for Mir), as long as Centaur is smaller than Mir (which I believe it is), it should fit under the shroud. I vaguely recall that the Russians are developing a LH2/LOX upper stage for the Proton.",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "From: \"Phil G. Fraering\" <pgf@srl03.cacs.usl.edu> Right, the Profiting Caste is blessed by God, and may freely blare its presence in the evening twilight ..",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Doug-- Actually, if memory serves, the Atlas is an outgrowth of the old Titan ICBM. If so, there's probably quite a few old pads, albeit in need of some serious reconditioning. Still, Being able to buy the turf and pad (and bunkers, including prep facility) at Midwest farmland prices strikes me as pretty damned cheap.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "This list brings to mind possible the worst trade since Babe for NONO NANNETTE, i.e., Milt Pappas for Frank Robinson, I think in 1965 ?. Robinson proceeded to win the triple crown in 1966 and may have beaten out Yaz in '67 but was injured on a slide into second when he collided with the mighty Al Weis (Chisox).",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I ordered an external floppy drive from them 2 years ago. When I placed the order, they said it was in stock and would ship the next day. A week passed and no drive. I called them up and they said they were out of stock and my drive should ship in 2 weeks or so. Since I needed the drive right away (both my internal hard drive and floppy were dead) I cancelled my order and haven't dealt with them since.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "It would also be great for another reason - when not docked, it could serve as an ARA server to the large internal HD, your corporate email, etc. In a pinch, you would also have two machines, instead of 1.5. If they could couple that thought with RocketShare, and let you use both the '030 on the PB and the '040 on the dock, it would be a mighty powerful dock. --",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I don't think we've got a conspiracy on our hands, or anything vaugely similar. I do think that the Feds showed a distinct lack of both intelligence and disregard for others safety throughout this whole mess. I do think the FBI and the BATF screwed up big. What made me really concerned was FBI director William Sessions being on CNN engaging in what could only be called spin control before the place had even cooled down. Evertyhing had literally blown up in their faces and I felt there had to be something more important he should have been doing...",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Wrong, the CD300 (external) is just a plain ol' SCSI device. No, multisession capability and double speed are two different thing. Its just that the newer CD ROM drives have both capability. Multisession means that when you put more pictures on a photo CD after the first session, the drive can read and display them. Double speeds just transfer ANY type of data (excluding sound) at around double the speed. CD150 is not multisession capable. This means that you lose the ability to add any more pictures after the first time (must buy a new CD). Finally, since the CD150 is not a double speed drive, it will require twice as long to transfer data (excluding sound).",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Unfortunately, if you launch this from the US (or are a US citizen), you will need a launch permit from the Office of Commercial Space Transportation, and I think it may be difficult to get a permit for an antisatellite weapon... :-) The threshold at which OCST licensing kicks in is roughly 100km. (The rules are actually phrased in more complex ways, but that is the result.)",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "As for SF and advertising in space. There is a romantic episode in Mead's \"The Big Ball of Wax\" where the lovers are watching the constellation Pepsi Cola rising over the horizon and noting the some 'stars' had slipped cause the Teamsters were on strike. This was the inspiration for my article on orbiting a formation of space mirrors published in Spaceflight in 1986. As the reviews but is it aesthetically desirable? These days the only aesthetics that count are the ones you can count!",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Could someone explain where these names come from? I'm sure there's a perfectly good reason to name a planetoid \"Smiley,\" but I'm equally sure that I don't know what that reason is. Read John le Carre's \"Tinker, Tailor, Soldier, Spy\", \"The Honorable Schoolboy\" or \"Smiley's People\".",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I think you've got an off-by-one error in your memory. :-) MM bought the satellite-building side of GE. E, not D. MM and GD are still competitors. Better, yes, but we're not talking order of magnitude. (Especially if you want to use Titan IV, which belongs to the USAF, not MM.) Sure, you can get a heavylift launcher fairly cheap if you do it privately rather than as a gummint project. But we're still talking about something that will cost nine digits per launch, unless you can guarantee a large market to justify volume production.",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Please note that my above comment was not intended as a flame of Ken's call for Congressional leadership to conduct a proper investigation. It was merely to call attention to the hazard of having Specter involved. If anyone took it that way, I apologize.",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "You're right: Thomas, Gonzalez, Sheffield, and Griffey don't even begin to compare with Ripken, Boggs, and Gwynn, so no wonder Alomar gets so much attention. Sandberg got no attention his rookie year because his rookie year was terrible. So was his sophomore year. National League pitchers are \"much better pitchers\"? That certainly explains Sheffield's 1993, hm? Are you confusing \"have ERA's that are 0.40 lower because they don't face DH's\" with \"much better\"?",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "yeah, but most of those are Big Hulking Mainframes which have no monitors. factoid : FAbricated or Corrupted Tidbit of Ordinary Information (Diluted) ok dpm",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Apparently you are unfamiliar with the history of the FBI. You might try looking up articles from the 70's on the FBI's Cointelpro operation for starters. -- Dave Feustel N9MYI <feustel@netcom.com>",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I read this morning that Sid Fernandez left last nights' game with stiffness in his shoulder. Does anyone have any information as to the extent of the injury (if indeed there is one), or weather the cold air in Colorado just got his joints a little stiff? Thanks for the help...",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Two meg. sim that came from a PB100 for sale. I am asking $60 (postage included). If you are interested please e-mail me via internet. If you do not have internet availability you may contact me at 301/468-0241.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Actually, there can be any number of players on a side. You can have a 25-man roster, a 40-man roster, etc.... Ryan Robbins Penobscot Hall University of Maine",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I'm considering adding a floptical drive to my current system. What I would like to know is which floptical drives are recommended for their quality and performance. My preference would be floptical drives capable of handling both 800k and 1.4k floppies, but handling 800k floppies is not a necessity. So far, I only know a bit about the Iomega floptical and the Infinity floptical drives. Are there any comments/recommendations for either of these? Are there any other floptical drives that are worth looking into and where can they be purchased (i.e. which mail order places, etc). Thanks in advance. Please send replies directly to umsoroko@ccu.umanitoba.ca",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "While there may not be a part number for the CD300i drive, I have seen a part number for the bezel kit (a new front panel with the slot in it through which you insert the CD). The document (which I got from the 2/10/93 announcement at our Apple office) states the drive kit and bezel kits are separate items and the bezel kit has an SRP of $149 fro the C650. The external unit may be a better deal after all.",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Alan, don't forget, a HUGE cost for airliner developement is FAA certification. the joke is when the paperwork exceeds teh weight of the airplane, it will fly. The SR-71, and teh X-15 both highly ambitious aero-space projects were done on very narrow engineering budgets. Partly because they didn't spend much on paper pushing. There is some company in missouri trying to get funding to build light commercial transporters on a low cost basis, mostly by reducing FAA certification costs.",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Forgive me if this has been asked before... but here goes: My friend recently purchased a LC III and he wants to know if there is such a demon called NuBus adapter for his PDS slot? CompUsa and ComputerCity Supercenter says they don't carry them. Does this mean LC III is incapable of carrying a NuBus board?",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "About three weeks ago on the SPACE list, someone was quoting a source on the relative traffic and rankings of this listserv. A figure of 88th in traffic(?) was given. Unfortunately I did not clip the message and I would like to know the source of the rankings list. If anybody still has that discussion on their disk or knows the source (or is the poster himself!) I'd appreciate getting that reference. Being on the road I have temporarily unsubscribed to the list to cut down mail box stuffing <g> so please reply via e-mail to lek@aip.org OR 71160.2356@compuserve.com or I won't get your answer!",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "I doubt Henderson would clear waivers. And if he did, he would instantly be signed for the major league minimum, with Oakland picking up the remaining $3 million tab. Some GMs value on-field performance too...",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "The briefing documents for the raid had a notation on them about a similar local property which had sold for $800,000 prior to the raid, if recent TV coverage can be believed. The Ventura County DA came to the same conclusion in the report he released, which lambasted the Sheriff's Office. Too bad the old man was nearly blind, and didn't take a few goose-stepping Drug Warriors (TM) with him.",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Hi everyone. I recently posted about how I received a bad vram chip for my new LCIII, and someone responded that it may not actually be bad, but it may be a 512K LC vram chip, and thus doesn't work properly with my computer. So I'm wondering if anyone can interpret these codes for me, so I can figure out what type of chip MacConnection sent me. 2515251 On the back of the card, it says 0593 I believe from the numbers that means it is an 80ns chip, but I can't figure out what the size is supposed to be. If anyone can help, I'd be grateful. Please email me your response. Thanks a lot! -- Hillel Sims ----- simsh@rpi.edu ----- Rensselaer Polytechnic Institute",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Just curious if anyone has started to standout early in the season in the BB DDD this year. I expect the Phillies staff, while getting the wins, would have to rank up there. Luis Gonzalez and Derrick May are among the early league leaders, and all 6 of their bombs have come at the Phils' expense. Neither of them have exactly been know for their tater prowess in the past. How have the Rockies been early? I know Mile High has produced a ton of runs, but is it the launching pad everyone expected yet? A concerned fan of the BB DDD,",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "The debate over the Second Amendment rages on. Arguments continue over what a \"well-regulated militia\" is and what TRKBA means in practical terms. However, the ONLY authority in this area, is a binding court decision on the matter. Even a decision in this area is subject to an overturning by a higher court. Is there anyone who has the facts of a legal precedent, preferably a Supreme Court decision on the specific meaning of the 2nd Amendment?",
+      "gold": "hardware",
+      "predicted": "hardware"
+    }
+  ]
+}
