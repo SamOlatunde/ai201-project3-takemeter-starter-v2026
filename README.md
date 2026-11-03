@@ -346,14 +346,17 @@ Both label passes were AI-assisted, and neither was done entirely by hand.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy |0.233  |  |  |
+| Macro F1 | 0.095 |  |  |
+| F1 — `hardware` | 0.378 |  |  |
+| F1 — `politics` | 0.000 |  |  |
+| F1 — `science` |0.000  |  |  |
+| F1 — `sport` | 0.000 |  |  |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+     I think the trained model will beat it significantly on all levels. Specifically on science 
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added

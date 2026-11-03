@@ -6,79 +6,74 @@
   "used_definitions": true,
   "scores": {
     "n": 30,
-    "accuracy": 0.26666666666666666,
-    "f1_macro": 0.10526315789473685,
+    "accuracy": 0.23333333333333334,
+    "f1_macro": 0.09459459459459459,
     "per_label": {
       "hardware": {
-        "precision": 0.26666666666666666,
+        "precision": 0.23333333333333334,
         "recall": 1.0,
-        "f1": 0.4210526315789474,
-        "support": 8
+        "f1": 0.37837837837837834,
+        "support": 7
       },
       "politics": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0.0,
-        "support": 9
+        "support": 10
       },
       "science": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0.0,
-        "support": 5
+        "support": 6
       },
       "sport": {
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0.0,
-        "support": 8
+        "support": 7
       }
     }
   },
   "predictions": [
     {
-      "text": "As I heard the story, before Albert came up the the theory o'relativity and warped space, nobody could account for Mercury's orbit. It ran a little fast (I think) for simple Newtonian physics. With the success in finding Neptune to explain the odd movments of Uranus, it was postulated that there might be another inner planet to explain Mercury's orbit. It's unlikely anything bigger than an asteroid is closer to the sun than Mercury. I'm sure we would have spotted it by now. Perhaps some professionals can confirm that.",
-      "gold": "politics",
-      "predicted": "hardware"
-    },
-    {
-      "text": "The Proton has been used in 2, 3, and 4 stage versions. The two stage version was used for the first 3 launches, while the 3 and 4 stage versions are used today. The four stage version is used mostly for escape (and geosynchronous?) orbits, while the 3 stage version is used for low earth orbits. Since this is the version that launched Mir and the Salyuts (and the add-on modules for Mir), as long as Centaur is smaller than Mir (which I believe it is), it should fit under the shroud. I vaguely recall that the Russians are developing a LH2/LOX upper stage for the Proton.",
+      "text": "Yes, but that's because interstellar grains are very poor radiators, not remotely black bodies. As a consequence they are a lot warmer than the \"ambient\". When I was in graduate school, a long time ago, we used 10,000 deg K with a DILUTION FACTOR of 10+4 for representative values of the radiant energy background in the galaxy due to starlight.",
       "gold": "science",
       "predicted": "hardware"
     },
     {
-      "text": "From: \"Phil G. Fraering\" <pgf@srl03.cacs.usl.edu> Right, the Profiting Caste is blessed by God, and may freely blare its presence in the evening twilight ..",
+      "text": "I was wondering if what many of you did to accelerate your IIsi's from 20 MHz to 25 Mhz (and beyond) can be done to a IIci (ie. from 25 MHz to 32-33 Mhz)?",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Any lunar satellite needs fuel to do regular orbit corrections, and when its fuel runs out it will crash within months. The orbits of the Apollo motherships changed noticeably during lunar missions lasting only a few days. It is *possible* that there are stable orbits here and there -- the Moon's gravitational field is poorly mapped -- but we know of none. Perturbations from Sun and Earth are relatively minor issues at low altitudes. The big problem is that the Moon's own gravitational field is quite lumpy due to the irregular distribution of mass within the Moon.",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Well, no, during the original deployment mission the HST aperture door was not opened until after the Shuttle had landed. I presume that during a re-boost mission HST would be berthed in the orbiter with the orbiter bay doors shut; but still there would be lots of contamination worries. I understand that the EVA suits are one of the hardest things to keep clean. But I still don't know where the idea is coming from that HST _NEEDS_ a re-boost. We have many problems but our orbit is the least of them. There is certainly no plan to change the orbit in the first servicing mission in December.",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "That's very true. I live in Richmond, home of the AAA Richmond Braves, and they have this guy Ryan Klesko who hit 17 HR's at home last year. Now that doesn't sound like a whole lot, BUT the way the \"Diamond\" is built, Home runs are a rarity. In fact, Ron Gant, Brian Hunter and David Justice all proved they could hit in Richmond. When they were sent to the majors, they never came back. If you can hit in Richmond, you can hit anywhere.",
       "gold": "sport",
       "predicted": "hardware"
     },
     {
-      "text": "Doug-- Actually, if memory serves, the Atlas is an outgrowth of the old Titan ICBM. If so, there's probably quite a few old pads, albeit in need of some serious reconditioning. Still, Being able to buy the turf and pad (and bunkers, including prep facility) at Midwest farmland prices strikes me as pretty damned cheap.",
-      "gold": "politics",
-      "predicted": "hardware"
-    },
-    {
-      "text": "This list brings to mind possible the worst trade since Babe for NONO NANNETTE, i.e., Milt Pappas for Frank Robinson, I think in 1965 ?. Robinson proceeded to win the triple crown in 1966 and may have beaten out Yaz in '67 but was injured on a slide into second when he collided with the mighty Al Weis (Chisox).",
-      "gold": "hardware",
-      "predicted": "hardware"
-    },
-    {
-      "text": "I ordered an external floppy drive from them 2 years ago. When I placed the order, they said it was in stock and would ship the next day. A week passed and no drive. I called them up and they said they were out of stock and my drive should ship in 2 weeks or so. Since I needed the drive right away (both my internal hard drive and floppy were dead) I cancelled my order and haven't dealt with them since.",
-      "gold": "politics",
-      "predicted": "hardware"
-    },
-    {
-      "text": "It would also be great for another reason - when not docked, it could serve as an ARA server to the large internal HD, your corporate email, etc. In a pinch, you would also have two machines, instead of 1.5. If they could couple that thought with RocketShare, and let you use both the '030 on the PB and the '040 on the dock, it would be a mighty powerful dock. --",
+      "text": "I like this statement, though for my own reasons. Cost comparisons depend a lot on whether the two options are similar, and *then* it becomes very revealing to consider what their differences are. Can Soyuz launch the Long Exposure Facility? Course not. Will the Shuttle take my television relay to LEO by year's end? Almost certainly not, but the Russians are pretty good about making space accessible on a tight schedule. Comparing S and SS points up that there are TWO active space launcher-and-work-platform resources, with similarities and differences. Where they are in direct competition, we may get to see some market economics come into play. tombaker",
       "gold": "science",
       "predicted": "hardware"
     },
     {
-      "text": "I don't think we've got a conspiracy on our hands, or anything vaugely similar. I do think that the Feds showed a distinct lack of both intelligence and disregard for others safety throughout this whole mess. I do think the FBI and the BATF screwed up big. What made me really concerned was FBI director William Sessions being on CNN engaging in what could only be called spin control before the place had even cooled down. Evertyhing had literally blown up in their faces and I felt there had to be something more important he should have been doing...",
-      "gold": "politics",
+      "text": "Uh, I don't think you can call a team with Tom Seaver, Jerry Koosman, and Nolan Ryan on the pitching staff a team that has \"no talent.\" They did come out of nowhere, but some of the improvement was forseeable.",
+      "gold": "sport",
       "predicted": "hardware"
     },
     {
-      "text": "Wrong, the CD300 (external) is just a plain ol' SCSI device. No, multisession capability and double speed are two different thing. Its just that the newer CD ROM drives have both capability. Multisession means that when you put more pictures on a photo CD after the first session, the drive can read and display them. Double speeds just transfer ANY type of data (excluding sound) at around double the speed. CD150 is not multisession capable. This means that you lose the ability to add any more pictures after the first time (must buy a new CD). Finally, since the CD150 is not a double speed drive, it will require twice as long to transfer data (excluding sound).",
-      "gold": "hardware",
+      "text": "I am interested in uncovering statistics on Boston Red Sox players from March 1992 - present. I want to look at changes in batting average, hits, multi-hit games, runs, stolen bases, and on base % during every game. Where can I find this information? Do any sports magazines log this info or do I have to go directly to the ball club? Thanks for the info. Kip",
+      "gold": "sport",
       "predicted": "hardware"
     },
     {
@@ -87,53 +82,88 @@
       "predicted": "hardware"
     },
     {
-      "text": "As for SF and advertising in space. There is a romantic episode in Mead's \"The Big Ball of Wax\" where the lovers are watching the constellation Pepsi Cola rising over the horizon and noting the some 'stars' had slipped cause the Teamsters were on strike. This was the inspiration for my article on orbiting a formation of space mirrors published in Spaceflight in 1986. As the reviews but is it aesthetically desirable? These days the only aesthetics that count are the ones you can count!",
+      "text": "Ugliest stance of all time has to go to Oscar Gamble. The man would practically kneel in front of home plate in order to have a small strike zone! (He's just lucky that strike zone size isn't determined by how big your afro is:)",
       "gold": "sport",
       "predicted": "hardware"
     },
     {
-      "text": "Could someone explain where these names come from? I'm sure there's a perfectly good reason to name a planetoid \"Smiley,\" but I'm equally sure that I don't know what that reason is. Read John le Carre's \"Tinker, Tailor, Soldier, Spy\", \"The Honorable Schoolboy\" or \"Smiley's People\".",
-      "gold": "hardware",
-      "predicted": "hardware"
-    },
-    {
-      "text": "I think you've got an off-by-one error in your memory. :-) MM bought the satellite-building side of GE. E, not D. MM and GD are still competitors. Better, yes, but we're not talking order of magnitude. (Especially if you want to use Titan IV, which belongs to the USAF, not MM.) Sure, you can get a heavylift launcher fairly cheap if you do it privately rather than as a gummint project. But we're still talking about something that will cost nine digits per launch, unless you can guarantee a large market to justify volume production.",
-      "gold": "sport",
-      "predicted": "hardware"
-    },
-    {
-      "text": "Please note that my above comment was not intended as a flame of Ken's call for Congressional leadership to conduct a proper investigation. It was merely to call attention to the hazard of having Specter involved. If anyone took it that way, I apologize.",
-      "gold": "sport",
-      "predicted": "hardware"
-    },
-    {
-      "text": "You're right: Thomas, Gonzalez, Sheffield, and Griffey don't even begin to compare with Ripken, Boggs, and Gwynn, so no wonder Alomar gets so much attention. Sandberg got no attention his rookie year because his rookie year was terrible. So was his sophomore year. National League pitchers are \"much better pitchers\"? That certainly explains Sheffield's 1993, hm? Are you confusing \"have ERA's that are 0.40 lower because they don't face DH's\" with \"much better\"?",
-      "gold": "sport",
-      "predicted": "hardware"
-    },
-    {
-      "text": "yeah, but most of those are Big Hulking Mainframes which have no monitors. factoid : FAbricated or Corrupted Tidbit of Ordinary Information (Diluted) ok dpm",
+      "text": "The debate over the Second Amendment rages on. Arguments continue over what a \"well-regulated militia\" is and what TRKBA means in practical terms. However, the ONLY authority in this area, is a binding court decision on the matter. Even a decision in this area is subject to an overturning by a higher court. Is there anyone who has the facts of a legal precedent, preferably a Supreme Court decision on the specific meaning of the 2nd Amendment?",
       "gold": "politics",
       "predicted": "hardware"
     },
     {
-      "text": "Apparently you are unfamiliar with the history of the FBI. You might try looking up articles from the 70's on the FBI's Cointelpro operation for starters. -- Dave Feustel N9MYI <feustel@netcom.com>",
+      "text": "No, they didn't have electrical power, but no, I don't find the idea of Davidians calmly cooking lunch with gas masks on as the FBI knocks the buildings down very credible,either. It's not like this whole discussion is relevant. It started when some- one made the wholly unsubstantiated allegation that the wood stove ig- nited NAPALM the FBI shot into the buildings. I'm not a groveling apoligist for the feds, far from it. But wild ac- cusations like this are ridiculous and obfuscate legitimate criticism of their conduct in this whole affair.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "It would also be great for another reason - when not docked, it could serve as an ARA server to the large internal HD, your corporate email, etc. In a pinch, you would also have two machines, instead of 1.5. If they could couple that thought with RocketShare, and let you use both the '030 on the PB and the '040 on the dock, it would be a mighty powerful dock. --",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "bm967@cleveland.Freenet.Edu (David Kantrowitz) writes ... Sure. Buy a switch box and a multisync monitor. I have just that arrangement on my desk and it works fine.",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Just curious if anyone has started to standout early in the season in the BB DDD this year. I expect the Phillies staff, while getting the wins, would have to rank up there. Luis Gonzalez and Derrick May are among the early league leaders, and all 6 of their bombs have come at the Phils' expense. Neither of them have exactly been know for their tater prowess in the past. How have the Rockies been early? I know Mile High has produced a ton of runs, but is it the launching pad everyone expected yet? A concerned fan of the BB DDD,",
+      "gold": "sport",
+      "predicted": "hardware"
+    },
+    {
+      "text": "That's nice, but it doesn't answer the question. There is a difference between \"the feds can mandate literacy\" and \"the feds can't interfere with literacy/book possession\". Actually, the Miller court did nothing of the kind. It remanded the case back to the trial court because the miller court didn't know if the weapon in question was a militia weapon. (Doesn't it bother anyone that a major constitutional issue was taken up in a case where there was no defense? Miller had been released by the appeals court and disappeared - only the govt was represented.) We don't know what would have happened with the reasonable \"all guns are militia weapons\" argument. -andy",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Does anyone know how to zap the PRAM on the Duo 230. Inaddition I have recently noticed that checking the ram left in the finder on the duo 230 4/80 reveals the normal 1800K for the system file but only about 1/10 to 1/5 of the bar is actually highlighted implying that only 2-300K is being used for the system. What gives? I have had no crashes yet or other software problem...",
+      "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "No chance. If that CS ignited at all, it would have been quite similar to a grain bin explosion. Explosion, I note. The entire compound would have been leveled, not merely burned. As there was no explosion, there was no CS ignition causing the fire. Note: at five miles a decent grain elevator explosion will knock you on your butt and your ears will ring for days. I speak from experience here.",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Of course not. The USA's only hope is for Yelsen (how ever you spell it) to fail the referendum, and have the hard-liners take over again. -- jmd@handheld.com",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "My information shows that the last San Marco launch was 1988. There seem to have been a total of seven before that. I seem to recall that someone, either ASI or the University of Rome (?) includes money in their annual budget for maintainance of the platforms (there are actually two). The Italians have been spending money to develop an advanced Scout. However, recent events in the Italian space program, and the Italian government overall make me skeptical that this will get off the ground in the near future.",
       "gold": "science",
       "predicted": "hardware"
     },
     {
-      "text": "I read this morning that Sid Fernandez left last nights' game with stiffness in his shoulder. Does anyone have any information as to the extent of the injury (if indeed there is one), or weather the cold air in Colorado just got his joints a little stiff? Thanks for the help...",
+      "text": "I phoned Licensing Division in Washington State to ask for an application for a CCW. Instead they promptly sent me an applicationfor becoming a firearms dealer in Washington!",
       "gold": "politics",
       "predicted": "hardware"
     },
     {
-      "text": "Two meg. sim that came from a PB100 for sale. I am asking $60 (postage included). If you are interested please e-mail me via internet. If you do not have internet availability you may contact me at 301/468-0241.",
+      "text": "As quoted from <1993Apr14.184448.2331@gnv.ifas.ufl.edu> by jrm@gnv.ifas.ufl.edu: You don't know much about modern automatic weapons, do you? Just about ANYBODY with basic manufacturing skill can turn out HIGH QUALITY submachineguns. A couple of high school shop teachers were recently arrested for building submachineguns in the school shop. I suggest that you go to the library and find a copy of \"Smallarms of the World\". Your entire premise is based on non-factual assumptions.",
       "gold": "politics",
       "predicted": "hardware"
     },
     {
-      "text": "Actually, there can be any number of players on a side. You can have a 25-man roster, a 40-man roster, etc.... Ryan Robbins Penobscot Hall University of Maine",
+      "text": "It may be that they just didn't mention it, or that they actually haven't thought about it. I got the vague impression from their mission proposal that they weren't taking a very holistic aproach to the whole thing. They seemed to want to land people on the Moon by the end of the decade without explaining why, or what they would do once they got there. The only application I remember from the Av Week article was placing a telescope on the Moon. That's great, but they don't explain why it can't be done robotically. But I'm a _member_. Besides Bill, I hang out with you :)",
+      "gold": "politics",
+      "predicted": "hardware"
+    },
+    {
+      "text": "Hey everybody: I want to buy a mac and I want to get a good price...who doesn't? So, could anyone out there who has found a really good deal on a Centris 650 send me the price. I don't want to know where, unless it is mail order or areound cleveland, Ohio. Also, should I buy now or wait for the Power PC. Thanks. BoB reply via post or e-mail at rrn@po.cwru.edu -- ---------------------------------------------------------------------- Robert Novitskey | \"Pursuing women is similar to banging one's head rrn@po.cwru.edu | against a wall...with less opportunity for reward\"",
       "gold": "hardware",
+      "predicted": "hardware"
+    },
+    {
+      "text": "It would be nice if someone here from the HST program was talking instead of all the speculation that is going on here. From what I understand from Dr. Frank Six of the Marshall Space Flight Center there is no insrmountable problem in bringing HST back. IT was designed that way to begin with. Also it is my understanding that the solar arrays WILL be one of the items replaced on this mission. The originals were built by Brit Aerospace and I think the new ones are too. I am currently working with the guys at MSFC that are in charge is the HST power system, although I have not spoken with them in a long time about HST.",
+      "gold": "science",
+      "predicted": "hardware"
+    },
+    {
+      "text": "This is turning into 'what's a moonbase good for', and I ought not to post when I've a hundred some odd posts to go, but I would think that the real reason to have a moon base is economic. Since someone with space industry will presumeably have a much larger GNP than they would _without_ space industry, eventually, they will simply be able to afford more stuff.",
+      "gold": "politics",
       "predicted": "hardware"
     },
     {
@@ -142,48 +172,18 @@
       "predicted": "hardware"
     },
     {
-      "text": "While there may not be a part number for the CD300i drive, I have seen a part number for the bezel kit (a new front panel with the slot in it through which you insert the CD). The document (which I got from the 2/10/93 announcement at our Apple office) states the drive kit and bezel kits are separate items and the bezel kit has an SRP of $149 fro the C650. The external unit may be a better deal after all.",
-      "gold": "science",
-      "predicted": "hardware"
-    },
-    {
-      "text": "Alan, don't forget, a HUGE cost for airliner developement is FAA certification. the joke is when the paperwork exceeds teh weight of the airplane, it will fly. The SR-71, and teh X-15 both highly ambitious aero-space projects were done on very narrow engineering budgets. Partly because they didn't spend much on paper pushing. There is some company in missouri trying to get funding to build light commercial transporters on a low cost basis, mostly by reducing FAA certification costs.",
+      "text": "After the marvelous \"time-out\" call by Chris Webber (which resulted in a technical foul, since his team had no time-outs left) perhaps Webber will take the place of Bill Buckner as the master of choke. At least this Red Sox fan hopes so. Ted",
       "gold": "sport",
       "predicted": "hardware"
     },
     {
-      "text": "Forgive me if this has been asked before... but here goes: My friend recently purchased a LC III and he wants to know if there is such a demon called NuBus adapter for his PDS slot? CompUsa and ComputerCity Supercenter says they don't carry them. Does this mean LC III is incapable of carrying a NuBus board?",
+      "text": "Yes, E-Machines makes two mini-docks--the Powerlink Presente and the PowerLink DeskNet. The Presenter offers a variety of video-out options, including NTSC, RGB and SVGA. It also has sound out, floppy drive port and a power port. Unfortunately no SCSI port and it blocks the serial port. The DeskNet has the standard ports plus built-in EtherNet. Alas, none of these have an FPU. In the future, RasterOps is putting out a mini-dock, but the name escapes me now. It is supposed to support 16-bit color and \"Quadra\" comparable video speed. No idea if it has an FPU. Hope this helps...",
       "gold": "hardware",
       "predicted": "hardware"
     },
     {
-      "text": "About three weeks ago on the SPACE list, someone was quoting a source on the relative traffic and rankings of this listserv. A figure of 88th in traffic(?) was given. Unfortunately I did not clip the message and I would like to know the source of the rankings list. If anybody still has that discussion on their disk or knows the source (or is the poster himself!) I'd appreciate getting that reference. Being on the road I have temporarily unsubscribed to the list to cut down mail box stuffing <g> so please reply via e-mail to lek@aip.org OR 71160.2356@compuserve.com or I won't get your answer!",
-      "gold": "hardware",
-      "predicted": "hardware"
-    },
-    {
-      "text": "I doubt Henderson would clear waivers. And if he did, he would instantly be signed for the major league minimum, with Oakland picking up the remaining $3 million tab. Some GMs value on-field performance too...",
-      "gold": "politics",
-      "predicted": "hardware"
-    },
-    {
-      "text": "The briefing documents for the raid had a notation on them about a similar local property which had sold for $800,000 prior to the raid, if recent TV coverage can be believed. The Ventura County DA came to the same conclusion in the report he released, which lambasted the Sheriff's Office. Too bad the old man was nearly blind, and didn't take a few goose-stepping Drug Warriors (TM) with him.",
+      "text": "I like Alomar. But I'd like to differ with your opinion about \"a city which is likely to pour in the votes...\". I attended many games last year during the balloting. I know that a great number of the attendees DID NOT fill out their ballots, but left them, beer soaked and torn on the floor of the stands. Toronto gets no more and no less votes than any other city for the All Star game. Unfortunately, this is not a one time thing. I've attended games during the last four seasons, and it has happened every time. The apathetic attitude to All Star ballots really offends me.",
       "gold": "sport",
-      "predicted": "hardware"
-    },
-    {
-      "text": "Hi everyone. I recently posted about how I received a bad vram chip for my new LCIII, and someone responded that it may not actually be bad, but it may be a 512K LC vram chip, and thus doesn't work properly with my computer. So I'm wondering if anyone can interpret these codes for me, so I can figure out what type of chip MacConnection sent me. 2515251 On the back of the card, it says 0593 I believe from the numbers that means it is an 80ns chip, but I can't figure out what the size is supposed to be. If anyone can help, I'd be grateful. Please email me your response. Thanks a lot! -- Hillel Sims ----- simsh@rpi.edu ----- Rensselaer Polytechnic Institute",
-      "gold": "sport",
-      "predicted": "hardware"
-    },
-    {
-      "text": "Just curious if anyone has started to standout early in the season in the BB DDD this year. I expect the Phillies staff, while getting the wins, would have to rank up there. Luis Gonzalez and Derrick May are among the early league leaders, and all 6 of their bombs have come at the Phils' expense. Neither of them have exactly been know for their tater prowess in the past. How have the Rockies been early? I know Mile High has produced a ton of runs, but is it the launching pad everyone expected yet? A concerned fan of the BB DDD,",
-      "gold": "science",
-      "predicted": "hardware"
-    },
-    {
-      "text": "The debate over the Second Amendment rages on. Arguments continue over what a \"well-regulated militia\" is and what TRKBA means in practical terms. However, the ONLY authority in this area, is a binding court decision on the matter. Even a decision in this area is subject to an overturning by a higher court. Is there anyone who has the facts of a legal precedent, preferably a Supreme Court decision on the specific meaning of the 2nd Amendment?",
-      "gold": "hardware",
       "predicted": "hardware"
     }
   ]
