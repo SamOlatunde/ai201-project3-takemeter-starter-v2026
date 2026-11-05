@@ -440,7 +440,7 @@ Fine tuning improved the performance. it looks like the model learnign the patte
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 27 / 30 = 90%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -462,25 +462,27 @@ Fine tuning improved the performance. it looks like the model learnign the patte
      written rule two different ways on 30 posts, that is direct evidence about
      what you did across your own 200. -->
 
+
 **1.**
-> *The post:*
+> *The post:* The 10K route was remeasured in 2021 and came out 60 metres long. Eve…
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take` 
 >
-> *My call, and why:*
+> *My call, and why:*  10k is not equivalent to 60 meters. The fact is false, and I consider that to be a hot take
 >
-> *Which pile:*
+> *Which pile:* b
 
 **2.**
-> *The post:*
+> *The post:* Times are down about 3% since the shoe rules changed, so obviously th…
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `hot_take` / `analysis`
 >
-> *My call, and why:*
+> *My call, and why:*  I beleive its analysis. The facts are rpesentated and used to justify when the times are faster.
 >
-> *Which pile:*
+> *Which pile:* a
 
-**What the pattern in my disagreements tells me:**
+
+**What the pattern in my disagreements tells me:** there's no pattern inmy disagreements.
 
 
 
