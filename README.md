@@ -346,12 +346,12 @@ Both label passes were AI-assisted, and neither was done entirely by hand.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |0.233  |  |  |
-| Macro F1 | 0.095 |  |  |
-| F1 — `hardware` | 0.378 |  |  |
-| F1 — `politics` | 0.000 |  |  |
-| F1 — `science` |0.000  |  |  |
-| F1 — `sport` | 0.000 |  |  |
+| Overall accuracy | 0.233 | 0.867 | +0.633 |
+| Macro F1 | 0.095 | 0.873 | +0.778 |
+| F1 — `hardware` | 0.378 | 1.000 | +0.622 |
+| F1 — `politics` | 0.000 | 0.778 | +0.778 |
+| F1 — `science` | 0.000 | 0.714 | +0.714 |
+| F1 — `sport` | 0.000 | 1.000 | +1.000 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
@@ -361,6 +361,7 @@ Both label passes were AI-assisted, and neither was done entirely by hand.
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+Fine tuning improved the performance. it looks like the model learnign the patterns
 
 
 
@@ -384,16 +385,20 @@ Both label passes were AI-assisted, and neither was done entirely by hand.
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| true \ predicted | science | sport | politics | hardware |
+|---|---|---|---|---|
+| **science** | 5 | 0 | 1 | 0 |
+| **sport** | 0 | 7 | 0 | 0 |
+| **politics** | 3 | 0 | 7 | 0 |
+| **hardware** | 0 | 0 | 0 | 7 |
 
-**My biggest off-diagonal number, and what it means:**
+
+
+**My biggest off-diagonal number, and what it means:**  3 real `politics` posts called `science` but only 1 `science` was called `politics`
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
 
 
 
