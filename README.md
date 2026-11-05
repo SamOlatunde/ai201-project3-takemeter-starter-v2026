@@ -374,11 +374,11 @@ Fine tuning improved the performance. it looks like the model learnign the patte
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy on the held-out test set | ≥ 0.90 on all three seeds | 0.867 | 0.667 | 0.733 | **MISS** — every seed falls short, and the spread (0.667–0.867) is 20 points wide |
+| 2. Re-labelling a 25-post sample, at most 1 disagreement | ≤ 1 of 25 | n/a | n/a | n/a | **NOT MEASURED** — this is a labelling check, not a seed one. Nearest evidence: 3 disagreements out of 30 against staff (`agreement_results.json`), and one of those was a typo (`reactioon`) |
+| 3. Every label's F1 within 0.10 of the best label's F1 | gap ≤ 0.10 on all three seeds | gap **0.286** (`science` 0.714 vs `sport`/`hardware` 1.000) | gap **0.547** (`science` 0.286 vs `hardware` 0.833) | gap **0.923** (`science` 0.000 vs `sport`/`hardware` 0.923) | **MISS** — `science` is the trailing label on all three seeds and the gap widens as accuracy falls |
+| 4. Of predictions with top-class probability ≥ 0.80, ≥ 90% correct | ≥ 0.90 of the ≥ 0.80 bucket | no predictions ≥ 0.80 (mean conf. 0.329 right / 0.297 wrong) | no predictions ≥ 0.80 (0.357 / 0.329) | no predictions ≥ 0.80 (0.361 / 0.322) | **CAN'T MEASURE** — the bucket is empty; top-class probability never reaches 0.80. Proxy: accuracy of the most-confident third = 1.00 / 0.90 / 1.00, least-confident third = 0.70 / 0.50 / 0.40 |
+| 5. Each label's predicted share of the test set within 8 points of 25% | ≤ 8 pt deviation on all three seeds | sci 26.7, spo 23.3, pol 26.7, hw 23.3 — max dev **1.7 pt** ✓ | sci 3.3, spo 20.0, pol **60.0**, hw 16.7 — max dev **35.0 pt** | sci **0.0**, spo 20.0, pol **60.0**, hw 20.0 — max dev **35.0 pt** | **MISS** — passes on seed 42 only; seeds 7 and 2024 collapse toward `politics` and predict `science` almost never |
 
 ### Confusion matrix
 
@@ -411,11 +411,11 @@ Fine tuning improved the performance. it looks like the model learnign the patte
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy on the held-out test set | ≥ 0.90, all three seeds | **MISSED** | 0.867 / 0.667 / 0.733. No seed reaches 0.90, so it fails on the weakest seed and on the strongest. Not a near-miss: the best seed is 3 points short and the worst is 23. |
+| 2 | Re-labelling a 25-post sample, at most 1 disagreement | ≤ 1 of 25 | **NOT MEASURED** | I never re-labelled my own sample, so I have no number for this one and I am not going to claim one. The closest evidence I have is the staff agreement check — 27/30, 3 disagreements — but that is me against staff under *their* taxonomy, which is a different question from whether I apply *my own* rules the same way twice. |
+| 3 | Every label's F1 within 0.10 of the best label's F1 | gap ≤ 0.10, all three seeds | **MISSED** | Gaps of 0.286 / 0.547 / 0.923. `science` is the trailing label every time and the gap grows as accuracy falls. Missed by a wide margin on the best seed, so no split of the data rescues it. |
+| 4 | Of predictions with top-class probability ≥ 0.80, ≥ 90% correct | ≥ 0.90 of that bucket | **CAN'T MEASURE** | The bucket is empty on all three seeds — mean top-class probability is 0.33–0.36 whether the prediction is right or wrong, so nothing clears 0.80 and there is no hit rate to compute. Not a miss; the criterion can't be evaluated as written. See the revision note below. |
+| 5 | Each label's predicted share of the test set within 8 points of 25% | ≤ 8 pt deviation, all three seeds | **MISSED** | Max deviation 1.7 / 35.0 / 35.0 points. Seed 42 passes comfortably; seeds 7 and 2024 push `politics` to 60% of all predictions and drop `science` to 3% and 0%. The target says all three seeds, so one pass out of three is a miss. |
 
 **Diagnoses**
 
@@ -428,7 +428,8 @@ Fine tuning improved the performance. it looks like the model learnign the patte
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
-
+     - Criterion 2 and 4 were unmeasured
+     - There aas too few examples of science
 
 ---
 
@@ -490,24 +491,58 @@ Fine tuning improved the performance. it looks like the model learnign the patte
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** I am going to add more examples to science and increase the training epoch from 3 to 5
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** the diagonials show that it mistakes science for politics and vice versa. and increasing the training epoch can give the opputiunity to learn the differences better.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy on the held-out test set | ≥ 0.90 on all three seeds | 0.857 | 0.857 | 0.857 | **STILL MISSED** — but by 4.3 points on every seed instead of 3–23. The spread collapsed from 20 points to 0. |
+| 2. Re-labelling a 25-post sample, at most 1 disagreement | ≤ 1 of 25 | n/a | n/a | n/a | **STILL NOT MEASURED** — unchanged; this is a labelling check and I did not re-label. |
+| 3. Every label's F1 within 0.10 of the best label's F1 | gap ≤ 0.10 on all three seeds | gap **0.263** (`politics` 0.737 vs `hardware` 1.000) | gap **0.171** (`politics` 0.762 vs `sport` 0.933) | gap **0.133** (`politics` 0.800 vs `hardware` 0.933) | **STILL MISSED** — but the worst gap fell from 0.923 to 0.263, and the trailing label changed from `science` to `politics`, which is what criterion 3 originally predicted would be at risk. |
+| 4. Of predictions with top-class probability ≥ 0.80, ≥ 90% correct | ≥ 0.90 of the ≥ 0.80 bucket | no predictions ≥ 0.80 (mean conf. 0.492 right / 0.474 wrong) | no predictions ≥ 0.80 (0.488 / 0.420) | no predictions ≥ 0.80 (0.494 / 0.423) | **STILL CAN'T MEASURE** — confidence rose from ~0.33 to ~0.49 but the bucket is still empty. Proxy: most-confident third = 0.909 / 0.909 / 1.000, least-confident third = 0.818 / 0.636 / 0.727 (up from 0.70 / 0.50 / 0.40). |
+| 5. Each label's predicted share of the test set within 8 points of 25% | ≤ 8 pt deviation on all three seeds | sci 37.1, spo 14.3, pol 25.7, hw 22.9 — max dev **12.1 pt** | sci 28.6, spo 22.9, pol 31.4, hw 17.1 — max dev **7.9 pt** ✓ | sci 34.3, spo 17.1, pol 28.6, hw 20.0 — max dev **9.3 pt** | **STILL MISSED** — passes on seed 7 only. The `politics` collapse is gone (60% → 25.7/31.4/28.6), but the skew moved to `science` being over-predicted. |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
+
+Yes, but not in the way I was aiming at. **No criterion that was missed is now
+met.** What changed is the variance, not the ceiling.
+
+| | Before | After |
+|---|---|---|
+| Accuracy across seeds | 0.867 / 0.667 / 0.733 | 0.857 / 0.857 / 0.857 |
+| Macro F1 | 0.873 / 0.633 / 0.640 | 0.860 / 0.863 / 0.869 |
+| Worst F1 gap (criterion 3) | 0.923 | 0.263 |
+| Worst label | `science`, F1 **0.000** on seed 2024 | `politics`, F1 0.737 at worst |
+| Most lopsided prediction share | `politics` at **60%** of all predictions | `science` at 37% |
+
+How I know it was the `science` examples and not the epochs: the failure I was
+trying to kill was `science` being predicted **zero times** on seed 2024 and
+once on seed 7. That is a label the model had given up on, and it had 37
+training examples against `politics`'s 68. After adding 27 more, `science`
+recall is 1.0 / 0.9 / 0.9 and it is never the trailing label again. Extra
+epochs would have sharpened whatever the model already believed; they would not
+have invented a class it was ignoring.
+
+My seed-42 accuracy actually went **down** slightly, 0.867 → 0.857, and its
+macro F1 went 0.873 → 0.860. I am not going to call that noise to make the
+change look better — on the one seed that was already working, this cost me a
+little. The trade was worth it because 0.867 on one seed and 0.667 on another
+is not a model I could report; three identical 0.857s is.
+
+**The honest confound:** I added training data, which also grew the test split
+from 30 posts to 35, and `science`'s test support from 6 to 10. Part of the
+`science` recovery is simply that its F1 is now computed over 10 examples
+instead of 6, which is exactly the jumpiness criteria.md warned me about for
+small labels. So the before/after is not a clean comparison on fixed data, and
+some of the stability gain is measurement, not model. The part that is *not*
+measurement is the prediction share: `politics` fell from 60% of predictions to
+25.7/31.4/28.6, and that is the model's behaviour changing, not the denominator.
 
 
 
@@ -517,11 +552,75 @@ Fine tuning improved the performance. it looks like the model learnign the patte
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+**Criterion 1 — accuracy ≥ 0.90, got 0.857 on all three seeds.** Missing by the
+same 4.3 points on every seed is not bad luck, it is a ceiling. All three seeds
+make 5 errors out of 35 and the errors sit on the same boundary (see criterion 3
+below), so this is the `politics`/`science` confusion costing me the criterion,
+not forty unrelated mistakes. What I'd do: fix the boundary, not the accuracy —
+there is no separate accuracy problem to solve. I stopped because the next
+honest step is re-reading rule 1 against the 5 errors, and that is a taxonomy
+revision I did not have time to re-label behind.
+
+**Criterion 3 — every label within 0.10 of the best, worst gap still 0.263.**
+`politics` is now the trailing label on all three seeds (0.737 / 0.762 / 0.800)
+and `hardware`/`sport` sit near the top. Worth saying plainly: **my original
+reason for this criterion predicted exactly this.** I wrote that `politics` was
+at risk "because rule 1 pulls cross-cutting posts into it from all three other
+topics." Before the fix that looked wrong, because `science` was collapsing and
+hiding it. It wasn't wrong, it was masked. What I'd do: rule 1 is doing too much
+work, and I'd split it — a post that *argues a position* about space funding is
+not the same object as a post that *reports* space engineering, and right now
+both land in different labels on a judgment I make inconsistently. I stopped
+because that is a taxonomy change, which means re-labelling all 227 posts.
+
+**Criterion 4 — unmeasurable, not missed.** Mean top-class probability rose from
+~0.33 to ~0.49, but nothing reaches 0.80, so the bucket the criterion is defined
+over is empty on all three seeds. I set the threshold in unit 5 by guessing what
+a confident prediction looks like, without knowing that a 4-class model
+fine-tuned on 227 examples does not produce probabilities that high. The
+criterion needs revising to a threshold the model can actually reach — the
+confidence-thirds split is the measurement I do have (most-confident third:
+0.909 / 0.909 / 1.000, least-confident: 0.818 / 0.636 / 0.727, and the ordering
+is right on every seed). I have written the revision into `criteria.md` under
+the original rather than editing the original line.
+
+**Criterion 5 — within 8 points of 25%, max deviation 12.1 / 7.9 / 9.3.** This
+one I now think is **partly broken as written**. I justified the 25% target by
+saying "stratifying makes the test set exactly 10 per label, so the true share
+is 25 percent by construction." That was never true of my data. My counts are
+68 `politics` / 64 `science` / 50 `hardware` / 45 `sport`, so the true test
+shares are about 28.6 / 28.6 / 22.9 / 20.0, not 25 each — and my own fix made
+it worse by adding 27 posts to one label. A model predicting perfectly would
+*still* show a 3.6-point deviation on `politics`. The criterion is measuring my
+data imbalance and the model's bias mixed together and I can't separate them
+from this number. What I'd do: restate it as deviation from each label's *true*
+share rather than from a flat 25%. I'm flagging it rather than silently
+rewriting it, because the measured miss is real either way — `science` at 37%
+against a true 28.6% is over-prediction by any version of this test.
+
+**Criterion 2 — still not measured.** I never re-labelled my own 25-post sample,
+so I have no number and I am not going to substitute the staff agreement figure
+for one. The staff check (27/30) answers whether I can apply *someone else's*
+written rules; criterion 2 asks whether I apply *my own* rules the same way
+twice. Given that criterion 3's diagnosis is "rule 1 is ambiguous and I apply it
+inconsistently," this is the measurement I most needed and least have. It is the
+first thing I'd do with more time, because it is the only one that would tell me
+whether the remaining errors are the model's or mine.
+
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+
+I meant `politics` to be an *argumentative stance* — rule 1 says a post arguing
+a position about conduct or policy is `politics` whatever it is nominally about
+— but the model learned `politics` as a *topic vocabulary*, so a post arguing
+against orbital advertising reads as `science` to it because every content word
+is about space. The confusion matrix says it in one direction: across the three
+after-seeds, real `politics` posts were called `science` **6 times** while
+`science` went the other way only **2 times**, and those are precisely the
+cross-cutting posts I flagged as HARD when I labelled them.
 
 
 
